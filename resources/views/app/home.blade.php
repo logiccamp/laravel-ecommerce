@@ -246,8 +246,6 @@
         </div>
     </div>
 </section>
-
-
 <hr>
 
 <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
@@ -285,6 +283,8 @@
 
     // <!-- on button click -->
     $('.filter-button-groups').on('click', 'li', function() {
+        alert("Hello");
+
         var filterValue = $(this).attr('data-filter');
         // use filterFn if matches value
 

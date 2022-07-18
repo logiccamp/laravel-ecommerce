@@ -52,6 +52,12 @@ Route::get('/cartbk', [CartsController::class, 'index'])->name('cartbk');
 Route::get('/cartbk/r/{cartId}', [CartsController::class, 'destroy'])->name('cartbkr');
 Route::get('/cartbk/u/{cartId}/{action}', [CartsController::class, 'update'])->name('cartbkr');
 
+
+Route::get('/account', function () {
+    return "Account - Coming";
+});
+
+
 // shop
 Route::get('/shopbk', [ProductsController::class, 'getAll'])->name('shopbk');
 Route::get('/categoriesbk', [CategoriesController::class, 'getAll'])->name('categoriesbk');
